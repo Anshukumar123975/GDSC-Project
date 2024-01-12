@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 50px;
+    }
+
+    .section h2 {
+      font-size: 50px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between; /* This will create equal spacing between your boxes */
+      margin-top: 40px;
+    }
+
+    .image {
+      justify-content: center;
+      background-position: center;
+      margin-left: 500px;
+    }
+
+    .section {
+      margin-top: 0px;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-bottom: 30px;
+      border: 2px solid;
+      background-color: white;
+      color: black;
+      border-color: orange;
+      padding: 20px;
+      font-size: 20px;
+      width: 40%; /* Adjusted width */
+      height: 900px;
+      text-align: center;
+    }
+
+    .section a {
+      text-decoration: none;
+    }
+
+    .section h2 {
+      font-size: 50px;
+    }
+
+    .btn {
+      border: 2px solid orange;
+      font-size: 15px;
+      padding: 12px 20px;
+      cursor: pointer;
+      background-color: white;
+      text-transform: uppercase;
+      transition: color 0.4s linear;
+      position: relative;
+    }
+
+    .btn:hover {
+      color: white;
+      background-color: red;
+    }
+
+    .btn::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      color: white;
+      z-index: -1;
+      transition: transform 0.5s;
+      transform-origin: 0 0;
+      transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    }
+
+    .btn::before {
+      transform: scaleX(0);
+    }
+
+    .btn:hover::before {
+      transform: scaleY(1);
+    }
+
+    nav {
+      background: orange;
+      height: 80px;
+      width: 100%;
+    }
+
+    label.logo {
+      color: white;
+      font-size: 35px;
+      line-height: 80px;
+      padding: 0 100px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      float: right;
+      margin-right: 20px;
+    }
+
+    nav ul li {
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+      font-size: 21px;
+      padding-right: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    a.active,
+    a:hover {
+      color: red;
+      transition: 0.5s;
+    }
+
+    .container h1 {
+      color: red;
+    }
+
+    /* Make the logos bigger */
+    .navbar img {
+      height: 60px; /* Adjust the height as needed */
+    }
+
+    /* Make the boxes cover the full width and sub-boxes in horizontal position */
+    .horizontal-boxes {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .horizontal-boxes .box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%; /* Adjusted width */
+      margin: 10px;
+      padding: 21px;
+    }
+    .horizontal-boxes .box .sub-box {
+      width: 50%; /* Adjusted width */
+      height: 160px; /* Adjusted height */
+      margin: 20px;
+      padding: 5px;
+      border-right: 1px solid #000;
+      box-sizing: border-box;
+    }
+    .sub-box a{
+      text-decoration: none;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    } 
+  </style>
+</head>
+
+<body link="black" alink="black" vlink="black">
+    <div class="navbar">
+      <nav>
+        <label class="logo">EduEvolve</label>
+        <ul>
+          <li><a href="intropage.html">Home</a></li>
+          <li><a href="akshat.html">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="horizontal-boxes">
+        <h1>Physics</h1>
+        <div class="box">
+        <div class="sub-box"><a href="jp.html"><img src="p23.png" height="150px" alt="Physics Image">REVISION VIDEOS</a></div>
+        <div class="sub-box"><a href="#"><img src="p21.png" height="150px" alt="Physics Image">PREVIOUS YEAR QUES.</a></div>
+        <div class="sub-box"><a href="https://jeemain.nta.ac.in/images/syllabus-for-jee-main-2024-as-on-01-november-2023.pdf"><img src="p22.png" height="150px" alt="Physics Image">PHYSICS-SYLLABUS</a></div>
+        <div class="sub-box"><a href="https://www.pw.live/exams/jee/jee-main-2024-chapter-wise-weightage/"><img src="p24.png" height="150px" alt="Physics Image">CHAPTER WEIGHT.</a></div>
+        <div class="sub-box"><a href="physicsanimation.html"><img src="p25.jpg" height="150px" alt="Physics Image">ANIMATED VIDEOS</a></div>
+        <div class="sub-box"><a href="#"><img src="p26.png" height="150px" alt="Physics Image">TEXTBOOKS</a></div>
+      </div>
+      <h1>Chemistry</h1>
+      <div class="box">
+        <div class="sub-box"><a href="jc.html"><img src="p23.png" height="150px" alt="Physics Image">REVISION VIDEOS</a></div>
+        <div class="sub-box"><a href="#"><img src="p21.png" height="150px" alt="Physics Image">PREVIOUS YEAR QUES.</a></div>
+        <div class="sub-box"><a href="https://jeemain.nta.ac.in/images/syllabus-for-jee-main-2024-as-on-01-november-2023.pdf"><img src="p22.png" height="150px" alt="Physics Image">CHEM-SYLLABUS</a></div>
+        <div class="sub-box"><a href="https://www.pw.live/exams/jee/jee-main-2024-chapter-wise-weightage/"><img src="p24.png" height="150px" alt="Physics Image">CHAPTER WEIGHT.</a></div>
+        <div class="sub-box"><a href="#"><img src="p25.jpg" height="150px" alt="Physics Image">ANIMATED VIDEOS</a></div>
+        <div class="sub-box"><a href="#"><img src="p26.png" height="150px" alt="Physics Image">TEXTBOOKS</a></div>
+      </div>
+      <h1>Maths</h1>
+      <div class="box">
+        <div class="sub-box"><a href="jm.html"><img src="p23.png" height="150px" alt="Physics Image">REVISION VIDEOS</a></div>
+        <div class="sub-box"><a href="#"><img src="p21.png" height="150px" alt="Physics Image">PREVIOUS YEAR QUES.</a></div>
+        <div class="sub-box"><a href="https://jeemain.nta.ac.in/images/syllabus-for-jee-main-2024-as-on-01-november-2023.pdf"><img src="p22.png" height="150px" alt="Physics Image">MATHS-SYLLABUS</a></div>
+        <div class="sub-box"><a href="https://www.pw.live/exams/jee/jee-main-2024-chapter-wise-weightage/"><img src="p24.png" height="150px" alt="Physics Image">CHAPTER WEIGHT.</a></div>
+        <div class="sub-box"><a href="#"><img src="p25.jpg" height="150px" alt="Physics Image">ANIMATED VIDEOS</a></div>
+        <div class="sub-box"><a href="#"><img src="p26.png" height="150px" alt="Physics Image">TEXTBOOKS</a></div>
+      </div>
+    </div>
+  </body> 
+  </html>

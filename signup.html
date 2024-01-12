@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <link href="style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><link href="style.css" rel="stylesheet">
+    <style>
+        a{
+            text-decoration: none;
+            color: orange;
+        }
+        a.active,a:hover{
+            color: red;
+        }
+        body{
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            font-style: arial;
+        }
+        .container{
+            margin: auto;
+            text-align: center;
+            /* background-image: url('https://wallpapers.com/images/hd/baptism-background-1920-x-1080-15m4uhh0igxyn7pz.jpg'); */ 
+            /* background-repeat: no-repeat;
+            background-size:100% 286%; */
+            border: 3px solid orange;
+            width: 400px;
+            padding: 20px;
+            margin-top: 150px;
+            border-radius: 18px;
+            height: 451px;
+        }
+        .b{
+            border: 3px rgb(171, 62, 62);
+            height: 450px;
+            padding: 21px;
+            border-radius: 18px;
+        }
+        .username input{
+            height:46px;
+            width:90%;
+            border-radius:21px;
+        }
+        .username input{
+            height:46px;
+            width:90%;
+            border-radius:21px;
+        }
+        .email input{
+            height:46px;
+            width:90%;
+            border-radius:21px;
+        }
+        .password input{
+            height:46px;
+            width:90%;
+            border-radius:21px;
+        }
+        .re-enter input{
+            height:46px;
+            width:90%;
+            border-radius:21px;
+        }
+        H2{
+            color: red;
+            text-align: center;
+        }
+        .btn{
+            color: blue;
+            border-radius:5px;
+            font-size: 18px;
+            width:90%;
+            margin-top: 20px;;
+        }
+
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <H2>CREATE ACCOUNT</H2>
+        <div class="b">
+            <form action="backend.php">
+                <div class="username">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <br>
+                <div class="email">
+                    <input type="email" placeholder="E-mail" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <br>
+                <div class="password">
+                    <input type="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <br>
+                <div class="re-enter">
+                    <input type="text" placeholder="Re-enter your password" required>
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <br>
+                <div>
+                   <button class="btn"><a href="hackathon.html">CREATE ACCOUNT</button>
+                </div>
+            </form>
+        </div> 
+    </div>                   
+</body>
+</html>
